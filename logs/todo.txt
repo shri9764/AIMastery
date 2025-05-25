@@ -1,0 +1,49 @@
+2025-05-25 10:54:31,235 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ShrikrishnaJagtap\AppData\Local\Programs\Python\Python312\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-25 10:56:37,828 - INFO - Received todo_record: title='AWS Essentials' author='Jeff Bezos' description='Learn the core services of AWS and cloud infrastructure.' published_date=2022 rating=4 price=550 owner_id=1
+2025-05-25 10:56:37,848 - INFO - Todo created successfully: AWS Essentials (ID: 8)
+2025-05-25 10:57:00,585 - INFO - Received todo_record: title='DevOps with Docker' author='Kelsey Hightower' description='Building CI/CD pipelines using Docker and Kubernetes.' published_date=2021 rating=5 price=600 owner_id=1
+2025-05-25 10:57:00,596 - INFO - Todo created successfully: DevOps with Docker (ID: 9)
+2025-05-25 10:58:24,220 - INFO - Todo updated successfully: DevOps with Docker (ID: 9)
+2025-05-25 10:59:14,439 - INFO - Todo deleted: DevOps with Docker (ID: 9) by user 3
+2025-05-25 11:19:50,400 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ShrikrishnaJagtap\AppData\Local\Programs\Python\Python312\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-25 11:42:28,719 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ShrikrishnaJagtap\AppData\Local\Programs\Python\Python312\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-25 11:53:51,002 - ERROR - Error in render_todo_page: 401: Could not validate user
+2025-05-25 12:07:08,247 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ShrikrishnaJagtap\AppData\Local\Programs\Python\Python312\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-25 12:07:44,497 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ShrikrishnaJagtap\AppData\Local\Programs\Python\Python312\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-25 12:08:39,149 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ShrikrishnaJagtap\AppData\Local\Programs\Python\Python312\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-25 12:22:27,755 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ShrikrishnaJagtap\AppData\Local\Programs\Python\Python312\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'

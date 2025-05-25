@@ -1,0 +1,53 @@
+{% include 'layout.html' %}
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      Let's edit your todo!
+    </div>
+    <div class="card-body">
+      <div id="message" class="alert d-none" role="alert"></div>
+      <form id="editTodoForm">
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" class="form-control" name="title" value="{{ todo.title }}" required>
+        </div>
+
+        <div class="form-group">
+          <label>Author</label>
+          <input type="text" class="form-control" name="author" value="{{ todo.author }}" required>
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+          <textarea name="description" class="form-control" rows="3" required>{{ todo.description }}</textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Published Year</label>
+          <input type="text" class="form-control" name="published_date" value="{{ todo.published_date }}" min="1900" max="2099" required>
+          <small class="form-text text-muted">Enter year only (e.g., 2024)</small>
+        </div>
+
+        <div class="form-group">
+          <label>Rating (1-5)</label>
+          <select name="rating" class="form-control" required>
+            {% for r in range(1, 6) %}
+              <option value="{{ r }}" {% if todo.rating == r %}selected{% endif %}>{{ r }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Price (₹)</label>
+          <input type="number" class="form-control" name="price" value="{{ todo.price }}" required min="0">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update Todo</button>
+        <!-- <button id="deleteButton" type="button" class="btn btn-danger">Delete</button> -->
+        <button id="deleteButton" data-todo-id="{{ todo.id }}" class="btn btn-danger">Delete</button>
+        <a href="/todos/todo-page" class="btn btn-success">Back</a>
+      </form>
+    </div>
+  </div>
+</div>

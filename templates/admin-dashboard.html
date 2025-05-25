@@ -1,0 +1,55 @@
+{% include 'layout.html' %}
+
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      <h3>Admin Dashboard - All Todos</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Description</th>
+            <th>Published Year</th>
+            <th>Rating</th>
+            <th>Price (₹)</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for todo in todos %}
+          <tr {% if todo.complete %}class="table-success"{% endif %}>
+            <td>{{ loop.index }}</td>
+            <td>{{ todo.title }}</td>
+            <td>{{ todo.author }}</td>
+            <td>{{ todo.description }}</td>
+            <td>{{ todo.published_date }}</td>
+            <td>{{ todo.rating }}</td>
+            <td>{{ todo.price }}</td>
+            <td>
+              {% if todo.complete %}
+                Completed
+              {% else %}
+                Pending
+              {% endif %}
+            </td>
+            <td>
+              <button onclick="window.location.href='/todos/edit/{{ todo.id }}'" class="btn btn-info btn-sm">
+                Edit
+              </button>
+              <button class="btn btn-danger btn-sm delete-btn" data-todo-id="{{ todo.id }}">
+                Delete
+              </button>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <a href="/todos/add-todo-page" class="btn btn-primary">Add New Todo</a>
+    </div>
+  </div>
+</div>

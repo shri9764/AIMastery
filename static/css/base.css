@@ -1,0 +1,35 @@
+/* Table cell layout fixes (added at the top) */
+table td, table th {
+  white-space: nowrap;          /* Prevent line breaks */
+  overflow: hidden;             /* Hide overflow text */
+  text-overflow: ellipsis;      /* Show "..." for truncated text */
+  max-width: 200px;             /* Adjust column width as needed */
+}
+
+/* Strike-through style for completed todos */
+/* .strike-through-td {
+  text-decoration: line-through;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+} */
+
+/* Original styles */
+body {
+  background: #fafafa;
+  color: #33333a;
+  padding-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #323232;
+}
+
+.main-color {
+  background-color: #0e76a8;
+}
+
+/* h1 {
+  color: red;
+} */

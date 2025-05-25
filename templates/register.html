@@ -1,0 +1,70 @@
+{% include 'layout.html' %}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <!-- Left Side: AI-related Image -->
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <img src="/static/images/ai-placeholder.png" alt="AI Illustration" class="img-fluid" style="max-height: 400px;">
+        </div>
+
+        <!-- Right Side: Register Form -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>Register</h3>
+                </div>
+                <div class="card-body">
+                    <form id="registerForm"> <!-- method="POST"> -->
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username*</label>
+                            <input type="text" class="form-control" id="username" name="username" required minlength="3">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" minlength="5">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="First_name" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="First_name" name="First_name" minlength="3">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="last_name" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" name="last_name" minlength="3">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="hash_password" class="form-label">Password*</label>
+                            <input type="password" class="form-control" id="hash_password" name="hash_password" required minlength="5">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Phone_number" class="form-label">Phone Number*</label>
+                            <input type="number" class="form-control" id="Phone_number" name="Phone_number" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" name="address" maxlength="255"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="role" class="form-label">Role</label>
+                            <input type="text" class="form-control" id="role" name="role" minlength="5">
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Register</button>
+                        </div>
+                    </form>
+
+                    <div class="text-center mt-2">
+                        <a href="/auth/login-page">Already have an account? Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
